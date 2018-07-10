@@ -1,0 +1,76 @@
+%footer.ct-footer
+  .ct-footer-top
+    .container
+      .row
+        .col-sm-12
+          .ct-preFooter.ct-u-padding-top-30
+            .row
+              .col-sm-12.col-md-6.text-center-md
+                .widget
+                  .widget-inner
+                    %ul.list-unstyled.list-inline.ct-socials.text-center-sm.ct-u-padding-top-15
+                      %li
+                        %a{"data-placement" => "bottom", "data-toggle" => "tooltip", :href => "https://www.facebook.com/store.handsomecake", :title => "Facebook", target: "_blank"}
+                          %i.fa.fa-facebook
+                      %li
+                        %a{"data-placement" => "bottom", "data-toggle" => "tooltip", :href => "https://www.instagram.com/store.handsomecake/", :title => "Instagram", target: "_blank"}
+                          %i.fa.fa-instagram
+                      / %li
+                      /   %a{"data-placement" => "bottom", "data-toggle" => "tooltip", :href => "#", :title => "Pinterest"}
+                      /     %i.fa.fa-pinterest
+                      / %li
+                      /   %a{"data-placement" => "bottom", "data-toggle" => "tooltip", :href => "#", :title => "Vkontakte"}
+                      /     %i.fa.fa-vk
+                      / %li
+                      /   %a{"data-placement" => "bottom", "data-toggle" => "tooltip", :href => "#", :title => "Linkedin"}
+                      /     %i.fa.fa-linkedin
+                      / %li
+                      /   %a{"data-placement" => "bottom", "data-toggle" => "tooltip", :href => "#", :title => "Rss"}
+                      /     %i.fa.fa-rss
+              .col-sm-12.col-md-6.text-right.text-center-md
+                .widget
+                  .widget-inner
+                    .successMessage.alert.alert-success.alert-dismissible{:role => "alert", :style => "display:none"}
+                      Thank you. Your message has been sent correctly.
+                      %button.close{"aria-hidden" => "true", "aria-label" => "Close", "data-dismiss" => "alert", :type => "button"} x
+                    .successError.alert.alert-danger.alert-dismissible{:role => "alert", :style => "display:none"}
+                      Ups! An error occured. Please try again later.
+                      %button.close{"aria-hidden" => "true", "aria-label" => "Close", "data-dismiss" => "alert", :type => "button"} x
+                    %form.ct-newsletter.form-inline.validateIt{:action => "assets/form/send.php", "data-email-subject" => "Newsletter", :method => "POST"}
+                      .form-group
+                        %label{:for => "ct-newsletter"} Рассылка
+                        %span.inner
+                          %input#ct-newsletter.form-control{:name => "field[]", :placeholder => "Эл. почта", :required => "required", :type => "email"}/
+                          %button{:type => "submit"}
+                            %i.fa.fa-plus-circle
+    / =render 'front/navigation/footer_nav'
+    
+  .ct-footer-bottom
+    .container
+      .row
+        .col-sm-12
+          .ct-payments
+            .row
+              .col-sm-3
+                .widget
+                  .widget-inner
+                    / %a.ct-link.ct-link--arrowMotive.text-uppercase{:href => "shop-locator.html"} Shop locator
+                    %a.ct-link.ct-link--arrowMotive.text-uppercase{:href => "#"} На главную
+              .col-sm-9
+                .widget
+                  .widget-inner
+                    .ct-payments-icons
+                      %span.ct-payment-title Мы принимаем: наличные, Тинкофф, Сбербанк
+                      / %img{:alt => "", :src => "#{asset_path 'stock/content/drone/payment-icons.png' }"}/
+          .ct-footer-copyright
+            .row
+              .col-sm-7
+                %span.ct-copyright-text
+                  © 2018 Все права зарегистрированы. &amp; 
+                  %a{:href => "http://store.handsomecake.com"} store.handsomecake
+              .col-sm-5
+                %ul.list-inline.list-unstyled.ct-list-terms
+                  %li
+                    %a{:href => "terms-conditions.html"} Terms &amp; Conditions
+                  %li
+                    %a{:href => "privacy-policy.html"} Privacy Policy

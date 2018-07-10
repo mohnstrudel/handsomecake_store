@@ -1,0 +1,21 @@
+%section.ct-dividerSection.ct-dividerSection--motive.ct-call-to-action--type1.ct-u-padding-both-60
+  .inner
+    .container
+      .row
+        .col-sm-12
+          .ct-dividerSection--left
+            .ct-iconBox.ct-iconBox--type3.ct-iconBox--white.media
+              .media-left
+                %img{:alt => "", :src => "#{asset_path 'custom/logo/logo.png' }", width: 128}/
+              .media-body
+                %h4.ct-iconBox-title Закажи сегодня за 84.950₽
+                %p.ct-iconBox-description Доставка со склада в Москве. Гарантия от производителя. Самая низкая цена рунета.
+          .ct-dividerSection--right.text-right
+            %a.btn-group.btn-group--separated{"data-scroll" => "#order", :href => "#order"}
+              %span.btn.btn-dark.btn-separated заказать
+              %span.btn.btn-dark.btn-separated
+                %i.fa.fa-shopping-cart
+            %a.btn-group.btn-group--separated{"data-scroll" => "#moreinfo", :href => "#moreinfo"}
+              %span.btn.btn-white.btn-separated узнать больше
+              %span.btn.btn-white.btn-separated
+                %i.fa.fa-caret-right

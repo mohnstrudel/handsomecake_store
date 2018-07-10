@@ -1,0 +1,30 @@
+%section#moreinfo
+  .ct-gallery--col2
+    .ct-gallery-item
+      %figure.ct-imageBox.ct-imageBox--inline.ct-imageBox--left
+        %img{:alt => "", :src => "#{asset_path 'custom/product/home_left.png' }"}/
+        %figcaption
+          .inner
+            .inner-cell
+              .ct-imageBox-icon
+                %i.fa.fa-book
+            .inner-cell
+              .ct-imageBox-content
+                %p Читайте, что пишет интернациональная пресса о данном мониторе.
+                %a.btn.btn-transparent.btn--withIcon.btn--motiveColor{"data-scroll" => "#press", :href => "#press"}
+                  подробнее
+                  %i.fa.fa-caret-right
+    .ct-gallery-item
+      %figure.ct-imageBox.ct-imageBox--inline
+        %img{:alt => "", :src => "#{asset_path 'custom/product/home_right.png' }"}/
+        %figcaption
+          .inner
+            .inner-cell
+              .ct-imageBox-icon
+                %i.fa.fa-map-o
+            .inner-cell
+              .ct-imageBox-content
+                %p Посмотреть условия доставки.
+                %a.btn.btn-transparent.btn--withIcon.btn--motiveColor{"data-scroll" => "#delivery", :href => "#delivery"}
+                  узнать
+                  %i.fa.fa-caret-right

@@ -1,0 +1,37 @@
+%section{"data-background" => "#262626"}
+  .container
+    .row.ct-u-padding-top-80.ct-u-padding-bottom-75
+      .col-md-3.col-sm-12
+        .ct-iconBox.ct-iconBox--type4.media.ct-iconBox--white
+          .media-left
+            .ct-iconBox-icon
+              %i.fa.fa-envelope-o
+          .media-body
+            %h6.ct-iconBox-title Заполните форму
+            %p.ct-iconBox-description
+      .col-md-9.col-sm-12.ct-u-padding-top-25
+        .successMessage.alert.alert-success.alert-dismissible{:role => "alert", :style => "display:none"}
+          Thank you. Your message has been sent correctly.
+          %button.close{"aria-hidden" => "true", "aria-label" => "Close", "data-dismiss" => "alert", :type => "button"} x
+        .successError.alert.alert-danger.alert-dismissible{:role => "alert", :style => "display:none"}
+          Ups! An error occured. Please try again later.
+          %button.close{"aria-hidden" => "true", "aria-label" => "Close", "data-dismiss" => "alert", :type => "button"} x
+        %form.ct-contactForm.validateIt{:action => "assets/form/send.php", "data-email-subject" => "Disrupt", :method => "POST"}
+          .row
+            .col-sm-6
+              .form-group
+                %input#cf-name.form-control{:name => "field[]", :placeholder => "Имя*", :required => "required", :type => "text"}/
+                %label.sr-only{:for => "cf-name"} Имя*
+            .col-sm-6
+              .form-group
+                %input#cf-email.form-control{:name => "field[]", :placeholder => "Эл. почта*", :required => "required", :type => "email"}/
+                %label.sr-only{:for => "cf-email"} Эл. почта
+          .row
+            .col-sm-12
+              .form-group
+                %textarea#cf-message.form-control{:placeholder => "Телефон*", :required => "required", :rows => "1"}
+                .ct-contactForm-requiredMessage *Обязательные поля
+                %button.btn.btn--withIcon{:type => "submit"}
+                  Оформить заказ
+                  %i.fa.fa-caret-right
+                %label.sr-only{:for => "cf-message"} Телефон*
