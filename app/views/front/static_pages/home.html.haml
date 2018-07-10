@@ -1,1 +1,594 @@
-%h1 Hello Obi Wan Kenobi
+.ct-preloader
+  .ct-preloader-inner
+    .ct-preloader-logo
+      %img{:alt => "", :src => "#{asset_path 'custom/logo/logo.png' }", width: 128}/
+      %h6.ct-preloader-title Идет загрузка, подождите...
+      .loading
+        .loading-line
+        .loading-break.loading-dot-1
+        .loading-break.loading-dot-2
+        .loading-break.loading-dot-3
+.ct-cart
+  .ct-cart__inner
+    .ct-cart__button.ct-js-cart__button
+      %i.fa.fa-shopping-cart
+    .ct-cart__message
+      %i.fa.fa-thumbs-o-up
+    .ct-cart__product
+#ct-js-wrapper.ct-js-wrapper.ct-pageWrapper
+  / Navigation
+  %nav.navbar.navbar-default.navbar-light.navbar-desktop.navbar--animated.navbar-top{"data-height" => "80"}
+    .container
+      .row
+        .col-sm-12
+          .navbar-header
+            %a.navbar-brand{:href => "index.html"}
+              %img{:alt => "", :src => "#{asset_path 'stock/content/smartphone/logo-light.png' }"}/
+          %ul.navbar-buttons.list-unstyled.list-inline.pull-right
+            %li
+              %a.btn-group.btn-group--separated{"data-scroll" => "#order", :href => "#order"}
+                %span.btn.btn-xs.btn-transparent.btn--white.btn-separated Order now
+                %span.btn.btn-xs.btn-transparent.btn--white.btn-separated
+                  %i.fa.fa-shopping-cart
+          %ul.nav.navbar-nav.ct-navbar--fadeIn{:role => "menu"}
+            %li.nav-item.dropdown
+              %a Home
+              %ul.dropdown-menu{:role => "menu"}
+                %li.nav-item
+                  %a{:href => "index3.html"} Smartwatch
+                %li.nav-item
+                  %a{:href => "index.html"} Drone
+                %li.nav-item
+                  %a{:href => "index5.html"} Smartphone
+                %li.nav-item
+                  %a{:href => "index2.html"} Beacon
+                %li.nav-item
+                  %a{:href => "index4.html"} Vr mask
+            %li.nav-item
+              %a{"data-scroll" => "#features", :href => "#features"} Features
+            %li.nav-item
+              %a{"data-scroll" => "#product", :href => "#product"} Product
+            %li.nav-item.dropdown
+              %a Pages
+              %ul.dropdown-menu{:role => "menu"}
+                %li.nav-item
+                  %a{:href => "services.html"} Services
+                %li.nav-item
+                  %a{:href => "shop-locator.html"} Shop locator
+                %li.nav-item
+                  %a{:href => "press-kit.html"} Press kit
+                %li.nav-item
+                  %a{:href => "404.html"} 404 page
+                %li.nav-item
+                  %a{:href => "faq.html"} FAQ
+                %li.nav-item
+                  %a{:href => "investors.html"} Investors
+                %li.nav-item
+                  %a{:href => "privacy-policy.html"} Privacy Policy
+                %li.nav-item
+                  %a{:href => "terms-conditions.html"} Terms &amp; conditions
+                %li.nav-item.dropdown-submenu
+                  %a{:href => "#"} Submenu
+                  %ul.dropdown-menu{:role => "menu"}
+                    %li.nav-item
+                      %a{:href => "#"} Submenu 1
+                    %li.nav-item
+                      %a{:href => "#"} Submenu 2
+                    %li.nav-item
+                      %a{:href => "#"} Submenu 3
+                    %li.nav-item
+                      %a{:href => "#"} Submenu 4
+            %li.nav-item
+              %a{:href => "about-us.html"} About us
+            %li.nav-item
+              %a{:href => "contact-us.html"} Contact
+  %header#home.ct-u-display-table.ct-mediaSection.ct-u-padding-both-50{"data-background" => "#{asset_path 'stock/content/smartphone/header.jpg' } ", "data-height" => "100%", "data-parallax" => "50"}
+    .inner
+      .container
+        .row
+          .col-md-6.text-right.text-center-md
+            %img{:alt => "", :src => "#{asset_path 'stock/content/smartphone/smart-main-preview.png' }"}/
+          .col-md-6
+            .ct-pageHeader.ct-pageHeader--type1
+              %h1.ct-pageHeader-title.ct-u-color--white
+                Premium
+                %br>/
+                for
+                %span.ct-u-colorMotive.inline.ct-u-font-italic Everyone
+            .ct-divider-line-type3.ct-u-margin-both-30
+              .ct-divider-icon
+                %i.fa.fa-shield
+              %span.ct-u-color--white.ct-u-font-weight--700 durable materials
+            %p.ct-u-color--white.ct-u-margin-bottom-40 Phasellus congue lacus eget neque. Phasellus ornare, ante vitae consectetuer consequat, purus sapien ultricies dolor.
+            %a.btn.btn-transparent.btn--withIcon.btn--white{:href => "shop-locator.html"}
+              shop locator
+              %i.fa.fa-caret-right
+  %section.ct-dividerSection.ct-dividerSection--motive.ct-call-to-action--type1.ct-u-padding-both-60
+    .inner
+      .container
+        .row
+          .col-sm-12
+            .ct-dividerSection--left
+              .ct-iconBox.ct-iconBox--type3.ct-iconBox--white.media
+                .media-left
+                  %img{:alt => "", :src => "#{asset_path 'stock/content/drone/icon-2.png' }"}/
+                .media-body
+                  %h4.ct-iconBox-title pre-Order Now For $599
+                  %p.ct-iconBox-description Get free gift and become our special member
+            .ct-dividerSection--right.text-right
+              %a.btn-group.btn-group--separated{:href => "//optimus-prime.createit.pl/disrupt-html/buy"}
+                %span.btn.btn-dark.btn-separated purchase now
+                %span.btn.btn-dark.btn-separated
+                  %i.fa.fa-shopping-cart
+              %a.btn-group.btn-group--separated{"data-scroll" => "#moreinfo", :href => "#moreinfo"}
+                %span.btn.btn-white.btn-separated Read more
+                %span.btn.btn-white.btn-separated
+                  %i.fa.fa-caret-right
+  %section#moreinfo
+    .ct-gallery--col2
+      .ct-gallery-item
+        %figure.ct-imageBox.ct-imageBox--inline.ct-imageBox--left
+          %img{:alt => "", :src => "#{asset_path 'stock/content/smartphone/more-col.jpg' }"}/
+          %figcaption
+            .inner
+              .inner-cell
+                .ct-imageBox-icon
+                  %i.fa.fa-book
+              .inner-cell
+                .ct-imageBox-content
+                  %p Explore our knowledgebase whenever you have any questions
+                  %a.btn.btn-transparent.btn--withIcon.btn--motiveColor{:href => "faq.html"}
+                    questions
+                    %i.fa.fa-caret-right
+      .ct-gallery-item
+        %figure.ct-imageBox.ct-imageBox--inline
+          %img{:alt => "", :src => "#{asset_path 'stock/content/smartphone/more-col2.jpg' }"}/
+          %figcaption
+            .inner
+              .inner-cell
+                .ct-imageBox-icon
+                  %i.fa.fa-map-o
+              .inner-cell
+                .ct-imageBox-content
+                  %p Use our shop locator to find the nearest dealer
+                  %a.btn.btn-transparent.btn--withIcon.btn--motiveColor{:href => "shop-locator.html"}
+                    shop locator
+                    %i.fa.fa-caret-right
+  %section#features.ct-u-padding-top-70.ct-u-padding-bottom-80
+    .container
+      .row
+        .col-md-6.col-md-offset-3.ct-u-padding-bottom-80
+          .ct-sectionHeader.ct-sectionHeader--typeDarken.ct-sectionHeader--subtitleItalic.text-center
+            %h3.ct-sectionHeader-title Features
+            %h4.ct-sectionHeader-subtitle We’re opening a new era for smartphones with our latest contruction
+    .container
+      .row
+        .col-md-6
+          .row
+            .col-sm-4
+              .ct-iconBox.ct-iconBox--type1
+                .ct-iconBox-icon
+                  %i.fa.fa-shield
+                %h6.ct-iconBox-title Durable
+                %p.ct-iconBox-description For special tasks
+            .col-sm-4
+              .ct-iconBox.ct-iconBox--type1
+                .ct-iconBox-icon
+                  %i.fa.fa-thumbs-o-up
+                %h6.ct-iconBox-title Convenient
+                %p.ct-iconBox-description For special NEeds
+            .col-sm-4
+              .ct-iconBox.ct-iconBox--type1
+                .ct-iconBox-icon
+                  %i.fa.fa-globe
+                %h6.ct-iconBox-title Gps Tracking
+                %p.ct-iconBox-description For position
+          .ct-divider-line--type2.ct-u-margin-bottom-30
+            .ct-divider-line-inner
+          .row
+            .col-sm-4
+              .ct-iconBox.ct-iconBox--type1
+                %h6.ct-iconBox-title Smart
+                %p.ct-iconBox-description For optimal Run
+                .ct-iconBox-icon
+                  %i.fa.fa-heart-o
+            .col-sm-4
+              .ct-iconBox.ct-iconBox--type1
+                %h6.ct-iconBox-title Notifications
+                %p.ct-iconBox-description For being informed
+                .ct-iconBox-icon
+                  %i.fa.fa-commenting-o
+            .col-sm-4
+              .ct-iconBox.ct-iconBox--type1
+                %h6.ct-iconBox-title Strong Battery
+                %p.ct-iconBox-description For long run
+                .ct-iconBox-icon
+                  %i.fa.fa-battery-three-quarters
+        .col-md-6
+          %img{:alt => "", :src => "#{asset_path 'stock/content/smartphone/preview-smart-2.png' }"}/
+  %section.ct-u-padding-top-80{"data-background" => "#1a1a1a"}
+    .container
+      .row
+        .col-md-6.col-md-offset-3.ct-u-padding-bottom-90
+          .ct-sectionHeader.ct-sectionHeader--typeLight.ct-sectionHeader--subtitleItalic.text-center
+            %h3.ct-sectionHeader-title Gallery
+            %h4.ct-sectionHeader-subtitle
+              See what our drone is capable of.
+              %br/
+              Grab some popcorn.
+    .ct-gallery.ct-gallery--col5._js-lightGallery{"data-class" => "ct-light-gallery"}
+      %a.ct-gallery-item{"data-sub-html" => "Image1. Place for the appropriate title.", :href => "#{asset_path 'stock/content/smartphone/smart-gallery-1.jpg' } "}
+        %img{:alt => "", :src => "#{asset_path 'stock/content/smartphone/smart-gallery-1.jpg' }"}/
+        .ct-gallery-item-inner
+          .ct-u-display-table
+            .ct-u-display-tableCell
+              .ct-item-zoomer
+                %span.ct-item-zoomer-icon
+                  %i.fa.fa-search
+                %h6.ct-item-zoomer-title Smartphone Shot #1
+      %a.ct-gallery-item{"data-sub-html" => "Image2. Place for the appropriate title.", :href => "#{asset_path 'stock/content/smartphone/smart-gallery-2.jpg' } "}
+        %img{:alt => "", :src => "#{asset_path 'stock/content/smartphone/smart-gallery-2.jpg' }"}/
+        .ct-gallery-item-inner
+          .ct-u-display-table
+            .ct-u-display-tableCell
+              .ct-item-zoomer
+                %span.ct-item-zoomer-icon
+                  %i.fa.fa-search
+                %h6.ct-item-zoomer-title Smartphone Shot #2
+      %a.ct-gallery-item{"data-sub-html" => "Image3. Place for the appropriate title.", :href => "#{asset_path 'stock/content/smartphone/smart-gallery-3.jpg' } "}
+        %img{:alt => "", :src => "#{asset_path 'stock/content/smartphone/smart-gallery-3.jpg' }"}/
+        .ct-gallery-item-inner
+          .ct-u-display-table
+            .ct-u-display-tableCell
+              .ct-item-zoomer
+                %span.ct-item-zoomer-icon
+                  %i.fa.fa-search
+                %h6.ct-item-zoomer-title Smartphone Shot #3
+      %a.ct-gallery-item{"data-sub-html" => "Image4. Place for the appropriate title.", :href => "#{asset_path 'stock/content/smartphone/smart-gallery-4.jpg' } "}
+        %img{:alt => "", :src => "#{asset_path 'stock/content/smartphone/smart-gallery-4.jpg' }"}/
+        .ct-gallery-item-inner
+          .ct-u-display-table
+            .ct-u-display-tableCell
+              .ct-item-zoomer
+                %span.ct-item-zoomer-icon
+                  %i.fa.fa-search
+                %h6.ct-item-zoomer-title Smartphone Shot #4
+      %a.ct-gallery-item{"data-sub-html" => "Image5. Place for the appropriate title.", :href => "#{asset_path 'stock/content/smartphone/smart-gallery-5.jpg' } "}
+        %img{:alt => "", :src => "#{asset_path 'stock/content/smartphone/smart-gallery-5.jpg' }"}/
+        .ct-gallery-item-inner
+          .ct-u-display-table
+            .ct-u-display-tableCell
+              .ct-item-zoomer
+                %span.ct-item-zoomer-icon
+                  %i.fa.fa-search
+                %h6.ct-item-zoomer-title Smartphone Shot #5
+  %section#product.ct-u-padding-both-100
+    .container
+      .row
+        .col-md-6.col-md-offset-3.ct-u-padding-bottom-70
+          .ct-sectionHeader.ct-sectionHeader--typeDarken.ct-sectionHeader--subtitleItalic.text-center
+            %h3.ct-sectionHeader-title Technical Specification
+            %h4.ct-sectionHeader-subtitle You can check how fast and high-end our product is
+    .container
+      .row
+        .col-md-3
+          %h5.h6.text-uppercase.ct-u-font-family-monsterrat.ct-u-font-weight--700.ct-u-margin-top-60.ct-u-margin-bottom-30 Hot Titles Coming
+          %ul.ct-list-decorated.ct-u-margin-bottom-20
+            %li
+              %span Super AMOLED Display
+            %li
+              %span Capacitive Touchscreen
+            %li
+              %span 16M Colors
+            %li
+              %span 1440x2560 Resolution (577 ppi)
+            %li
+              %span Multitouch Screen
+            %li
+              %span Gorilla Glass 4
+            %li
+              %span 5.1 Inches Size
+        .col-md-6
+          %img{:alt => "", :src => "#{asset_path 'stock/content/smartphone/preview-smart.png' }"}/
+        .col-md-3
+          %h5.h6.text-uppercase.ct-u-font-family-monsterrat.ct-u-font-weight--700.ct-u-margin-top-60.ct-u-margin-bottom-30 Power for work
+          %ul.ct-list-decorated.ct-u-margin-bottom-20
+            %li
+              %span GSM / HSPA / LTE
+            %li
+              %span Android Lollipop 5.1.1
+            %li
+              %span Exynos 7420 Octa
+            %li
+              %span Eight-Core CPU
+            %li
+              %span Mali-T760MP8 GPU
+            %li
+              %span 32/64/128 GB, 3 GB RAM
+            %li
+              %span WLAN, Bluetooth, GPS, NFC
+  %section.ct-u-padding-top-75.ct-u-padding-bottom-60{"data-background" => "#f8f8f8"}
+    .container
+      .row
+        .col-md-6.col-md-offset-3.ct-u-padding-bottom-70
+          .ct-sectionHeader.ct-sectionHeader--typeDarken.ct-sectionHeader--subtitleItalic.text-center
+            %h3.ct-sectionHeader-title We Were Featured
+            %h4.ct-sectionHeader-subtitle Our company was featured by a number of the most important press &amp; tech magazines throughout the world.
+      .row
+        .col-sm-4.ct-u-padding-top-25
+          %img.img-responsive{:alt => "", :src => "#{asset_path 'stock/content/drone/icon-laure.png' }"}/
+        .col-sm-8
+          .ct-js-slick.ct-dots--type1.ct-dots--positionBottomCenter.ct-dots--motive{"data-autoplay" => "true", "data-dots" => "true", "data-items-lg" => "4", "data-items-md" => "3", "data-items-sm" => "2", "data-items-xs" => "2"}
+            .item
+              %a.ct-brandBox{:href => "#"}
+                %figure
+                  %img{:src => "#{asset_path 'stock/content/drone/brand-item-1.png' }"}/
+                  %figcaption Hipster
+              %a.ct-brandBox{:href => "#"}
+                %figure
+                  %img{:src => "#{asset_path 'stock/content/drone/brand-item-3.png' }"}/
+                  %figcaption Henderson
+            .item
+              %a.ct-brandBox{:href => "#"}
+                %figure
+                  %img{:src => "#{asset_path 'stock/content/drone/brand-item-2.png' }"}/
+                  %figcaption Walkers
+              %a.ct-brandBox{:href => "#"}
+                %figure
+                  %img{:src => "#{asset_path 'stock/content/drone/brand-item-4.png' }"}/
+                  %figcaption Sunshine
+            .item
+              %a.ct-brandBox{:href => "#"}
+                %figure
+                  %img{:src => "#{asset_path 'stock/content/drone/brand-item-3.png' }"}/
+                  %figcaption Henderson
+              %a.ct-brandBox{:href => "#"}
+                %figure
+                  %img{:src => "#{asset_path 'stock/content/drone/brand-item-1.png' }"}/
+                  %figcaption Hipster
+            .item
+              %a.ct-brandBox{:href => "#"}
+                %figure
+                  %img{:src => "#{asset_path 'stock/content/drone/brand-item-4.png' }"}/
+                  %figcaption Sunshine
+              %a.ct-brandBox{:href => "#"}
+                %figure
+                  %img{:src => "#{asset_path 'stock/content/drone/brand-item-2.png' }"}/
+                  %figcaption Walkers
+  %section#order.ct-dividerSection.ct-dividerSection--currency.ct-dividerSection--motive.ct-call-to-action--type1.ct-u-padding-both-70
+    .inner
+      .container
+        .row
+          .col-sm-12.text-center-lg
+            .ct-dividerSection--left
+              .ct-iconBox.ct-iconBox--type3.ct-iconBox--white.media
+                .media-body
+                  %h4.ct-iconBox-title Order Now
+                  %p.ct-iconBox-description Get free gift and become our special member
+            .ct-dividerSection--right.ct-product
+              %form.ct-addToCart.ct-contactForm.form-inline.ct-contactForm--white
+                %img.hidden.ct-product-image{:alt => "", :src => "#{asset_path 'stock/content/drone/gallery-item-drone-10.jpg' }"}/
+                .ct-product-price.hidden 299
+                .form-group
+                  %input.form-control.input-required-value{:placeholder => "Piece", :required => "", :type => "text", :value => ""}/
+                  .ct-addToCart-logic
+                    %span.ct-input-increment
+                      %i.fa.fa-plus-circle
+                    %span.ct-input-decrement
+                      %i.fa.fa-minus-circle
+                  %input#required-value{:type => "hidden", :value => "0"}/
+                .form-group.ct-product-title
+                  %span.hidden Item #01
+                  %select
+                    %option{:value => "Black"} Black
+                    %option{:value => "Purple"} Purple
+                    %option{:value => "Yellow"} Yellow
+                    %option{:value => "Green"} Green
+                    %option{:value => "White"} White
+                .form-group
+                  %button.btn-group.btn-group--separated.ct-product-button{:type => "submit"}
+                    %span.btn.btn-dark.btn-lg.btn-separated add to cart
+                    %span.btn.btn-dark.btn-lg.btn-separated
+                      %i.fa.fa-shopping-cart
+  / Footer
+  %footer.ct-footer
+    .ct-footer-top
+      .container
+        .row
+          .col-sm-12
+            .ct-preFooter.ct-u-padding-top-30
+              .row
+                .col-sm-12.col-md-6.text-center-md
+                  .widget
+                    .widget-inner
+                      %ul.list-unstyled.list-inline.ct-socials.text-center-sm.ct-u-padding-top-15
+                        %li
+                          %a{"data-placement" => "bottom", "data-toggle" => "tooltip", :href => "#", :title => "Facebook"}
+                            %i.fa.fa-facebook
+                        %li
+                          %a{"data-placement" => "bottom", "data-toggle" => "tooltip", :href => "#", :title => "Twitter"}
+                            %i.fa.fa-twitter
+                        %li
+                          %a{"data-placement" => "bottom", "data-toggle" => "tooltip", :href => "#", :title => "Instagram"}
+                            %i.fa.fa-instagram
+                        %li
+                          %a{"data-placement" => "bottom", "data-toggle" => "tooltip", :href => "#", :title => "Pinterest"}
+                            %i.fa.fa-pinterest
+                        %li
+                          %a{"data-placement" => "bottom", "data-toggle" => "tooltip", :href => "#", :title => "Vkontakte"}
+                            %i.fa.fa-vk
+                        %li
+                          %a{"data-placement" => "bottom", "data-toggle" => "tooltip", :href => "#", :title => "Linkedin"}
+                            %i.fa.fa-linkedin
+                        %li
+                          %a{"data-placement" => "bottom", "data-toggle" => "tooltip", :href => "#", :title => "Rss"}
+                            %i.fa.fa-rss
+                .col-sm-12.col-md-6.text-right.text-center-md
+                  .widget
+                    .widget-inner
+                      .successMessage.alert.alert-success.alert-dismissible{:role => "alert", :style => "display:none"}
+                        Thank you. Your message has been sent correctly.
+                        %button.close{"aria-hidden" => "true", "aria-label" => "Close", "data-dismiss" => "alert", :type => "button"} x
+                      .successError.alert.alert-danger.alert-dismissible{:role => "alert", :style => "display:none"}
+                        Ups! An error occured. Please try again later.
+                        %button.close{"aria-hidden" => "true", "aria-label" => "Close", "data-dismiss" => "alert", :type => "button"} x
+                      %form.ct-newsletter.form-inline.validateIt{:action => "assets/form/send.php", "data-email-subject" => "Newsletter", :method => "POST"}
+                        .form-group
+                          %label{:for => "ct-newsletter"} Join our newsletter
+                          %span.inner
+                            %input#ct-newsletter.form-control{:name => "field[]", :placeholder => "Email address", :required => "required", :type => "email"}/
+                            %button{:type => "submit"}
+                              %i.fa.fa-plus-circle
+      %nav.ct-footer-nav
+        .container
+          .row
+            .col-sm-4
+              .widget
+                .widget-inner
+                  %img.ct-footer-brand{:alt => "", :src => "#{asset_path 'stock/content/drone/distrupt-logo-light.png' } "}/
+            .col-sm-8
+              .row
+                .col-sm-3.col-xs-6
+                  .widget
+                    .widget-inner
+                      %ul.list-unstyled.ct-menu-footer
+                        %li
+                          %a{:href => "index.html"} Home
+                        %li
+                          %a{:href => "services.html"} Services
+                .col-sm-3.col-xs-6
+                  .widget
+                    .widget-inner
+                      %ul.list-unstyled.ct-menu-footer
+                        %li
+                          %a{:href => "faq.html"} faq
+                        %li
+                          %a{:href => "privacy-policy.html"} privacy policy
+                .col-sm-3.col-xs-6
+                  .widget
+                    .widget-inner
+                      %ul.list-unstyled.ct-menu-footer
+                        %li
+                          %a{:href => "about-us.html"} About us
+                        %li
+                          %a{:href => "contact-us.html"} Contact us
+                .col-sm-3.col-xs-6
+                  .widget
+                    .widget-inner
+                      %ul.list-unstyled.ct-menu-footer
+                        %li
+                          %a{:href => "press-kit.html"} Press kit
+                        %li
+                          %a{:href => "investors.html"} Investors
+    .ct-footer-bottom
+      .container
+        .row
+          .col-sm-12
+            .ct-payments
+              .row
+                .col-sm-3
+                  .widget
+                    .widget-inner
+                      %a.ct-link.ct-link--arrowMotive.text-uppercase{:href => "shop-locator.html"} Shop locator
+                .col-sm-9
+                  .widget
+                    .widget-inner
+                      .ct-payments-icons
+                        %span.ct-payment-title We accept all populaR payment methods:
+                        %img{:alt => "", :src => "#{asset_path 'stock/content/drone/payment-icons.png' }"}/
+            .ct-footer-copyright
+              .row
+                .col-sm-7
+                  %span.ct-copyright-text
+                    © 2016 All rights reserved. Design &amp; development by
+                    %a{:href => "http://www.createit.pl/en"} createit
+                .col-sm-5
+                  %ul.list-inline.list-unstyled.ct-list-terms
+                    %li
+                      %a{:href => "terms-conditions.html"} Terms &amp; Conditions
+                    %li
+                      %a{:href => "privacy-policy.html"} Privacy Policy
+/ Mobile Menu //
+.ct-menu-mobile
+  %nav.navbar.navbar-dark
+    .container
+      .row
+        .col-xs-4.col-sm-4.hidden-xs
+          %ul.list-unstyled.list-inline.ct-socials--rounded
+            %li
+              %a{:href => "#"}
+                %i.fa.fa-facebook
+            %li
+              %a{:href => "#"}
+                %i.fa.fa-twitter
+            %li
+              %a{:href => "#"}
+                %i.fa.fa-instagram
+        .col-xs-7.col-sm-4
+          .navbar-header
+            %a.navbar-brand{:href => "index.html"}
+              %img{:alt => "", :src => "#{asset_path 'stock/content/beacon/distrupt-logo-light.png' }"}/
+        .col-xs-5.col-sm-4
+          %ul.nav.navbar-nav{:role => "menu"}
+            %li.ct-productCart-link
+              %a
+                %i.fa.fa-shopping-cart
+            %li.nav-item-toggle
+              %a
+                %i.fa.fa-bars
+.navbar-beacon
+  %ul.list-unstyled
+    %li.nav-item.dropdown
+      %a{:href => "#"}
+        Home
+        %i.fa.fa-angle-double-down
+      %ul.dropdown-menu{:role => "menu"}
+        %li.nav-item
+          %a{:href => "index3.html"} Smartwatch
+        %li.nav-item
+          %a{:href => "index.html"} Drone
+        %li.nav-item
+          %a{:href => "index5.html"} Smartphone
+        %li.nav-item
+          %a{:href => "index2.html"} Beacon
+        %li.nav-item
+          %a{:href => "index4.html"} VR
+    %li.nav-item
+      %a{"data-scroll" => "#features", :href => "#features"} Features
+    %li.nav-item
+      %a{"data-scroll" => "#product", :href => "#product"} Product
+    %li.nav-item.dropdown
+      %a{:href => "services.html"}
+        Pages
+        %i.fa.fa-angle-double-down
+      %ul.dropdown-menu{:role => "menu"}
+        %li.nav-item
+          %a{:href => "services.html"} Services
+        %li.nav-item
+          %a{:href => "404.html"} 404 page
+        %li.nav-item
+          %a{:href => "press-kit.html"} Press kit
+        %li.nav-item
+          %a{:href => "shop-locator.html"} Shop locator
+        %li.nav-item
+          %a{:href => "faq.html"} FAQ
+        %li.nav-item
+          %a{:href => "investors.html"} Investors
+        %li.nav-item
+          %a{:href => "privacy-policy.html"} Privacy Policy
+        %li.nav-item
+          %a{:href => "terms-conditions.html"} Terms &amp; conditions
+    %li.nav-item
+      %a{:href => "about-us.html"} About us
+    %li.nav-item
+      %a{:href => "contact-us.html"} Contact
+  %ul.list-unstyled.list-inline.ct-socials--rounded
+    %li
+      %a{:href => "#"}
+        %i.fa.fa-facebook
+    %li
+      %a{:href => "#"}
+        %i.fa.fa-twitter
+    %li
+      %a{:href => "#"}
+        %i.fa.fa-instagram
