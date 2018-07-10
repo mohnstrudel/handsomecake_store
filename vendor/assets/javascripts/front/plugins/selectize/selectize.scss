@@ -84,7 +84,7 @@ $selectize-caret-margin-rtl: 0 4px 0 -2px;
     background-image: -o-linear-gradient(top, $color-top, $color-bottom); // Opera 11.10
     background-image: linear-gradient(to bottom, $color-top, $color-bottom); // Standard, IE10
     background-repeat: repeat-x;
-    filter: unquote(("progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$color-top}', endColorstr='#{$color-bottom}', GradientType=0)")); // IE9 and down
+    // filter: unquote(("progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$color-top}', endColorstr='#{$color-bottom}', GradientType=0)")); // IE9 and down
 }
 
 //== Selectzie import
