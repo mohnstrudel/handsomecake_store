@@ -3,5 +3,7 @@ Rails.application.routes.draw do
 
   scope module: :front do
     root 'static_pages#home'
+
+    resources :requests
   end
 end

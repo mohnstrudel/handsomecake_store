@@ -11,27 +11,28 @@
             %p.ct-iconBox-description
       .col-md-9.col-sm-12.ct-u-padding-top-25
         .successMessage.alert.alert-success.alert-dismissible{:role => "alert", :style => "display:none"}
-          Thank you. Your message has been sent correctly.
+          Спасибо! Ваша заявка успешно зарегистрирована в системе.
           %button.close{"aria-hidden" => "true", "aria-label" => "Close", "data-dismiss" => "alert", :type => "button"} x
         .successError.alert.alert-danger.alert-dismissible{:role => "alert", :style => "display:none"}
-          Ups! An error occured. Please try again later.
+          Что-то пошло не так( Попробуйте заполнить форму ещё раз.
           %button.close{"aria-hidden" => "true", "aria-label" => "Close", "data-dismiss" => "alert", :type => "button"} x
-        %form.ct-contactForm.validateIt{:action => "assets/form/send.php", "data-email-subject" => "Disrupt", :method => "POST"}
+        
+        =form_with model: @request, class: 'ct-contactForm validateIt', data: {'email-subject' => "Disrupt"} do |f|
           .row
             .col-sm-6
               .form-group
-                %input#cf-name.form-control{:name => "field[]", :placeholder => "Имя*", :required => "required", :type => "text"}/
+                =f.text_field :name, id: 'cf-name', class: 'form-control', placeholder: 'Имя*', required: 'required'
                 %label.sr-only{:for => "cf-name"} Имя*
             .col-sm-6
               .form-group
-                %input#cf-email.form-control{:name => "field[]", :placeholder => "Эл. почта*", :required => "required", :type => "email"}/
+                =f.email_field :email, id: 'cf-email', class: 'form-control', placeholder: 'Эл. почта'
                 %label.sr-only{:for => "cf-email"} Эл. почта
           .row
             .col-sm-12
               .form-group
-                %textarea#cf-message.form-control{:placeholder => "Телефон*", :required => "required", :rows => "1"}
+                =f.text_area :phone, id: 'cf-message', class: 'form-control', placeholder: 'Телефон*', rows: 1, required: 'required'
                 .ct-contactForm-requiredMessage *Обязательные поля
-                %button.btn.btn--withIcon{:type => "submit"}
+                =button_tag 'Оформить заказ', class: 'btn btn--withIcon' do
                   Оформить заказ
                   %i.fa.fa-caret-right
                 %label.sr-only{:for => "cf-message"} Телефон*

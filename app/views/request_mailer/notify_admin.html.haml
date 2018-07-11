@@ -1,0 +1,8 @@
+%h2 Новый запрос на сайте
+
+%p="Имя: #{@request.name}"
+
+%p="Телефон: #{@request.phone}"
+
+-if @request.email.present?
+  %p="Email: #{@request.email}"
