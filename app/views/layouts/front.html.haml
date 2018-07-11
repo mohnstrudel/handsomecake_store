@@ -1,9 +1,14 @@
 !!!
 %html
   %head
-    %title 
+    = metamagic
     = stylesheet_link_tag    'front', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'front/social.js', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'front', media: 'all', 'data-turbolinks-track' => true
+    %noscript
+      %div
+        %img{:alt => "", :src => "https://mc.yandex.ru/watch/49547431", :style => "position:absolute; left:-9999px;"}/
+
     %meta{:content => "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no", :name => "viewport"}/
     = csrf_meta_tags
 

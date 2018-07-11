@@ -40,6 +40,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'haml-rails'
 gem "font-awesome-rails"
 gem "figaro"
+gem 'metamagic'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -55,6 +56,7 @@ group :development do
 
     gem 'capistrano-figaro-yml'
     gem 'capistrano-yarn'
+
 end
 
 group :development do
