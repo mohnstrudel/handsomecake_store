@@ -1,5 +1,38 @@
 %section{"data-background" => "#262626"}
   .container
+    .row#delivery
+      .col-sm-12
+        .ct-address.ct-address--col3.ct-address--descendingMotive
+          .inner
+            %a.ct-address-item{:href => "#"}
+              .ct-widget
+                .ct-widget-icon
+                  %i.fa.fa-truck
+                .ct-widget-content
+                  %h4.ct-widget-title Доставка
+                  %p.ct-widget-description 800 руб. до МКАД
+                  %p.ct-widget-description 800 + 50 руб/км от МКАД
+            %a.ct-address-item{:href => "mailto:store@handsomecake.com"}
+              .ct-widget
+                .ct-widget-icon
+                  %i.fa.fa-envelope-o
+                .ct-widget-content
+                  %h4.ct-widget-title Эл. почта
+                  %p.ct-widget-description store@handsomecake.com
+                  %p.ct-widget-description order@handsomecake.com
+            .ct-address-item
+              .ct-widget
+                .ct-widget-icon
+                  %i.fa.fa-clock-o
+                .ct-widget-content
+                  %h4.ct-widget-title Время доставки
+                  %p.ct-widget-description ПН-ПТ 19:00 - 24:00
+                  %p.ct-widget-description СБ, ВС: 10:00 - 24:00
+          .ct-address--footer
+            %i.fa.fa-home
+            %span ул. Новый Арбат 15с2, офис 202. 119019 Москва, Россия.
+
+
     .row.ct-u-padding-top-80.ct-u-padding-bottom-75
       .col-md-3.col-sm-12
         .ct-iconBox.ct-iconBox--type4.media.ct-iconBox--white
