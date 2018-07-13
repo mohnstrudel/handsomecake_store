@@ -65,7 +65,7 @@
               .form-group
                 =f.text_area :phone, id: 'cf-message', class: 'form-control', placeholder: 'Телефон*', rows: 1, required: 'required'
                 .ct-contactForm-requiredMessage *Обязательные поля
-                =button_tag 'Оформить заказ', class: 'btn btn--withIcon' do
+                =button_tag 'Оформить заказ', onclick: "yaCounter49547431.reachGoal('COMMIT_ORDER'); return true;", class: 'btn btn--withIcon' do
                   Оформить заказ
                   %i.fa.fa-caret-right
                 %label.sr-only{:for => "cf-message"} Телефон*
